@@ -1,4 +1,4 @@
-var dato = document.getElemenstByClassName("precio-anterior");
+var dato = document.getElementsByClassName("precio-anterior");
 var archivoTXT = new XMLHttpRequest();
 var fileRuta = 'index.txt';
 
