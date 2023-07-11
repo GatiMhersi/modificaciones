@@ -5,4 +5,4 @@ var fileRuta = 'index.txt';
 archivoTXT.open("GET", fileRuta, false);
 archivoTXT.send(null);
 var txt = archivoTXT.responseText;
-dato[1].innerText = txt.split(",")[1];
+dato.innerText = txt.split(",")[1];
