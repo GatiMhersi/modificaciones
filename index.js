@@ -1,4 +1,5 @@
 var dato = document.getElementsByClassName("precio-anterior");
+var actual = document.getElementsByClassName("precio-actual");
 var archivoTXT = new XMLHttpRequest();
 var fileRuta = 'index.txt';
 
@@ -6,5 +7,6 @@ archivoTXT.open("GET", fileRuta, false);
 archivoTXT.send(null);
 var txt = archivoTXT.responseText;
 for(var i = 0; i<dato.length; i++){
-    dato[i].innerText = txt.split(",")[1];
+    dato[i].innerText = txt.split(",")[i];
+    actual[i].innerText = (txt.split(",")[i]) * 0.3;
 }
